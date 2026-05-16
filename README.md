@@ -1,7 +1,7 @@
 # Credit Card Fraud — Statistical Analysis
 
 ## Overview
-Statistical analysis of 284,807 real Mastercard transactions to identify fraud patterns and validate a fraud alert intervention using 5 hypothesis tests.
+Statistical analysis of 284,807 real transactions to identify fraud patterns and validate a fraud alert intervention using 5 hypothesis tests.
 
 ## Business problem
 Can statistical analysis identify which transaction characteristics — amount, time of day, category — are 
