@@ -40,6 +40,17 @@ Kaggle — Credit Card Fraud Detection (ULB) https://www.kaggle.com/datasets/mlg
 
 **Result:** Yes (t=3.07, p=0.0022). 39.18% relative reduction — from 1.94% (control) to 1.18% (treatment). Minimum sample size calculated at 393 per group via power analysis before running test.
 
+## 📊 Visual Highlights
+
+### Class Imbalance
+![Class Imbalance](class_imbalance.png)
+
+### Amount Distribution
+![Amount Distribution](amount_distribution.png)
+
+### Correlation Heatmap
+![Correlation Heatmap](correlation_heatmap.png)
+
 ## Key insight
 Highest risk fraud profile identified:
 - Transaction amount above €500
@@ -50,6 +61,37 @@ Highest risk fraud profile identified:
 - A/B test is simulated — live pilot recommended
 - V1–V28 features anonymised via PCA
 - Class imbalance (0.17% fraud) requires SMOTE (Synthetic Minority Oversampling Technique) for predictive modelling
+
+## 🚀 How to Run
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/RishitaBansal12/credit-fraud-analysis.git
+cd credit-fraud-analysis
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Download dataset
+# Get creditcard.csv from https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+# Place it in the root folder
+
+# 4. Open notebook
+# Open credit_fraud_analysis.ipynb in VS Code or Jupyter
+```
+
+## 📁 Project Structure
+
+```
+credit-fraud-analysis/
+│
+├── credit_fraud_analysis.ipynb   ← Main analysis notebook
+├── amount_distribution.png       ← Transaction amount visualisation
+├── class_imbalance.png           ← Fraud vs legit distribution
+├── correlation_heatmap.png       ← Feature correlation matrix
+├── requirements.txt              ← Dependencies
+└── README.md
+```
 
 ## Tech stack
 Python · pandas · numpy · scipy · statsmodels · seaborn · matplotlib · Jupyter Notebook
